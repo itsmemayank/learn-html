@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Image Map</title>
+    <style media="screen">
+      .container {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Mapping of Images inside an Image -->
+    <div class="container">
+      <img src="image.jpg" usemap="#image-map" />
+      <map name="image-map">
+        <area
+          target="_blank"
+          alt="Deer"
+          title="Deer"
+          href="https://unsplash.com/images/animals/deer"
+          coords="1811,1733,1293,1358"
+          shape="rect"
+        />
+        <area
+          target="_blank"
+          alt="Sun"
+          title="Sun"
+          href="https://unsplash.com/images/nature/sun"
+          coords="2096,1178,336"
+          shape="circle"
+        />
+        <area
+          target="_blank"
+          alt="Tree"
+          title="Tree"
+          href="https://unsplash.com/images/things/christmas-tree"
+          coords="1134,1696,358,1940,5,1394,90,781,259,591,568,811,819,977"
+          shape="poly"
+        />
+      </map>
+    </div>
+  </body>
+</html>
